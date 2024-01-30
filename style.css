@@ -157,3 +157,17 @@ form,
     text-decoration: none;
     color: #596D48;
 }
+
+.error,
+.error:focus {
+    border: red solid 1px;
+}
+
+
+#pword.error + span::after {
+    position: relative ;
+    content: '*Passwords do not match';
+    color: red;
+    top: 3px;
+    font-weight: 300;
+}
