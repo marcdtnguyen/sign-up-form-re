@@ -163,9 +163,13 @@ form,
     border: red solid 1px;
 }
 
+#pword + span {
+    position: relative;
+}
+
 
 #pword.error + span::after {
-    position: relative ;
+    position: absolute ;
     content: '*Passwords do not match';
     color: red;
     top: 3px;
